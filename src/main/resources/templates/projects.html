@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+         
+    </head>
+    <body>
+         
+            <div th:fragment="projects"><!-- Projects Section-->
+            <section class="py-5">
+                <div class="container px-5 mb-5" th:fragment="projects">
+                    <div class="text-center mb-5">
+                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-11 col-xl-9 col-xxl-8">
+                            <!-- Project Card 1-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">UNET-Based Terrain Classification</h2>
+                                            <p>Our team and I developed a terrain classification system using PyTorch with a custom CNN/UNET model to accurately classify terrain images such as rocky, forest, and desert. The project involved data preprocessing, labeling, and augmentation to improve accuracy, along with GPU-accelerated training and deployment checkpoints for real-time inference. I also built an interactive Python application to test terrain images, showcasing AI integration in geospatial analysis and robotic navigation. This project highlights my expertise in deep learning workflows, model optimization, and image data pipelines.</p>
+                                        </div>
+                                        <img class="img-fluid" src="assests/images/terrain.png" height="300px" width="200px" alt="..."/>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card 2-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Pizza Order Management System</h2>
+                                            <p>Designed and developed a full-stack Pizza Order Management System using HTML, PHP, and MySQL, enabling efficient management of customers, orders, pizza types, and toppings. The system featured CRUD operations for customer profiles, pizza configurations, and order details through intuitive web forms, ensuring smooth data storage and retrieval. With a modular code structure, the application delivered an end-to-end solution covering front-end UI design, backend logic, and database integration, ensuring both maintainability and scalability</p>
+                                        </div>
+                                        <img class="img-fluid" src="assests/images/pizza.png" height="300px" width="200px" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Call to action section-->
+            <section class="py-5 bg-gradient-primary-to-secondary text-white"></div>
+                <div class="container px-5 my-5">
+                    <div class="text-center">
+                        <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
+                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="contact.html">Contact me</a>
+                    </div>
+                </div>
+            </section>
+     </body>
+</html>
