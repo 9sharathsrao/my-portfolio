@@ -1,158 +1,107 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Projects</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div th:fragment="projects">
-      <section class="py-5">
-        <div class="container px-5 mb-5">
-          <div class="text-center mb-5">
-            <h1 class="display-5 fw-bolder mb-0">
-              <span class="text-gradient d-inline">Projects</span>
-            </h1>
-          </div>
-          <div class="row gx-5 justify-content-center">
-            <div class="col-lg-11 col-xl-9 col-xxl-8">
-              
-              <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                <div class="card-body p-0">
-                  <div class="d-flex align-items-center">
-                    <div class="p-5">
-                      <h2 class="fw-bolder">AppIdea: Social Idea-Sharing Platform</h2>
-                      <p>Developed a community-driven social platform using Flutter and Supabase, enabling users to seamlessly publish, discover, and interact with innovative concepts. I architected a complex relational database schema in Supabase utilizing foreign key constraints to track user interactions and content metadata across dedicated Ideas and Votes tables. To ensure data integrity and a smooth user experience, I implemented a robust Upvote/Downvote system with logic designed to prevent duplicate votes while providing real-time feedback on idea popularity.</p>
-                    </div>
-                    <img
-                      class="img-fluid"
-                      src="assests/images/AppIdea_Application.jpg"
-                      style="width: 200px; min-width: 200px; height: 300px; object-fit: contain; display: block; margin-right: 20px"
-                      alt="AppIdea"
-                    />
-                  </div>
-                </div>
-              </div>
+<head></head>
+<body>
 
-              <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                <div class="card-body p-0">
-                  <div class="d-flex align-items-center">
-                    <div class="p-5">
-                      <h2 class="fw-bolder">To-Do Task Management App</h2>
-                      <p>Developed a cloud-enabled mobile application using Flutter that features a clean and intuitive UI for daily productivity management. I implemented a hybrid data strategy to ensure reliability and speed, using Sqflite for fast on-device storage and Firebase Firestore for real-time cloud synchronization across multiple devices. Secure user authentication was handled through Firebase Auth, ensuring that every user has a personalized and private task list.</p>
-                    </div>
-                    <img
-                      class="img-fluid"
-                      src="assests/images/TO_DO_Application.jpg"
-                      style="width: 200px; min-width: 200px; height: 300px; object-fit: contain; display: block; margin-right: 20px"
-                      alt="To-Do"
-                    />
-                  </div>
-                </div>
-              </div>
+<div th:fragment="projects">
+    <div class="section-wrap">
+        <div class="section-title">
+            <p class="eyebrow">Portfolio</p>
+            <h2>Projects</h2>
+        </div>
+        <div class="project-grid">
 
-              <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                <div class="card-body p-0">
-                  <div class="d-flex align-items-center">
-                    <div class="p-5">
-                      <h2 class="fw-bolder">VideoStream Explore</h2>
-                      <p>I built a dynamic video discovery platform using React and Tailwind CSS, focusing on delivering a responsive UI enhanced with custom Google Fonts and React Icons. By integrating the YouTube Data API v3 via Axios, I enabled the application to fetch real-time video feeds, channel metadata, and live search results. I managed the application's global state using Redux and handled client-side navigation between different content feeds and watch pages.</p>
+            <div class="project-card">
+                <div class="project-card-inner">
+                    <div class="project-content">
+                        <span class="project-tag">React · Spring Boot · Spring Security · JWT Auth · MySQL · RazorPay</span>
+                        <h2>Retail Billing Software System</h2>
+                        <p>
+                            Developed backend services using Java and Spring Boot for billing and inventory management.
+                            Designed and implemented RESTful APIs for efficient data processing and integration.
+                            Integrated frontend with backend using React.js and JSON-based communication. Performed
+                            debugging and optimized SQL queries to improve application performance and reliability.
+                        </p>
                     </div>
-                    <img
-                      class="img-fluid"
-                      src="assests/images/VideoExplore.jpg"
-                      style="width: 200px; min-width: 200px; height: 300px; object-fit: contain; display: block; margin-right: 20px"
-                      alt="VideoExplore"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                <div class="card-body p-0">
-                  <div class="d-flex align-items-center">
-                    <div class="p-5">
-                      <h2 class="fw-bolder">Retail Billing Software System</h2>
-                      <p>I developed a full-stack Point of Sale (POS) application using React.js and Spring Boot. I implemented Spring Security for role-based access control, securing all sensitive API endpoints. I integrated Razorpay for financial transactions and leveraged Cloudinary for cloud-based product image storage, demonstrating proficiency in building secure, transactional full-stack systems.</p>
+                    <div class="project-image">
+                        <img src="assests/images/Retail_billing_App.jpg" alt="Retail"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+                        <div class="img-placeholder" style="display: none">
+                            <i class="bi bi-cart-fill"></i>
+                        </div>
                     </div>
-                    <img
-                      class="img-fluid"
-                      src="assests/images/Retail_billing_App.jpg"
-                      style="width: 200px; min-width: 200px; height: 300px; object-fit: contain; display: block; margin-right: 20px;"
-                      alt="Retail"
-                    />
-                  </div>
                 </div>
-              </div>
-
-              <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                <div class="card-body p-0">
-                  <div class="d-flex align-items-center">
-                    <div class="p-5">
-                      <h2 class="fw-bolder">E-Commerce Web Application</h2>
-                      <p>Developed a full-stack e-commerce platform using Java, Spring Boot, and React. I implemented secure payment flows via Razorpay and utilized webhooks for real-time updates. Security was prioritized through Spring Security and JWT for API protection, while Cloudinary was utilized for efficient media asset management.</p>
-                    </div>
-                    <img
-                      class="img-fluid"
-                      src="assests/images/E-Com_Web_App.jpg"
-                      style="width: 200px; min-width: 200px; height: 300px; object-fit: contain; display: block; margin-right: 20px"
-                      alt="E-Commerce"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                <div class="card-body p-0">
-                  <div class="d-flex align-items-center">
-                    <div class="p-5">
-                      <h2 class="fw-bolder">UNET-Based Terrain Classification</h2>
-                      <p>Developed a terrain classification system using PyTorch with a custom CNN/UNET model to accurately classify terrain images such as rocky, forest, and desert. The project involved data preprocessing, labeling, and augmentation to improve accuracy, along with GPU-accelerated training and deployment checkpoints for real-time inference.</p>
-                    </div>
-                    <img
-                      class="img-fluid"
-                      src="assests/images/terrain.png"
-                      style="width: 200px; min-width: 200px; height: 300px; object-fit: contain; display: block;margin-right: 20px"
-                      alt="Terrain"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                <div class="card-body p-0">
-                  <div class="d-flex align-items-center">
-                    <div class="p-5">
-                      <h2 class="fw-bolder">Pizza Order Management System</h2>
-                      <p>Designed and developed a full-stack Pizza Order Management System using HTML, PHP, and MySQL, enabling efficient management of customers, orders, pizza types, and toppings. The system featured CRUD operations for customer profiles, pizza configurations, and order details through intuitive web forms.</p>
-                    </div>
-                    <img
-                      class="img-fluid"
-                      src="assests/images/pizza.png"
-                      style="width: 200px; min-width: 200px; height: 300px; object-fit: contain; display: block; margin-right: 20px"
-                      alt="Pizza System"
-                    />
-                  </div>
-                </div>
-              </div>
-
             </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- <section class="py-5 bg-gradient-primary-to-secondary text-white">
-        <div class="container px-5 my-5">
-          <div class="text-center">
-            <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
-            <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" th:href="@{/contact}">Contact me</a>
-          </div>
+            <div class="project-card">
+                <div class="project-card-inner">
+                    <div class="project-content">
+                        <span class="project-tag">Java · Spring Boot · React · RazorPay</span>
+                        <h2>E-Commerce Web Application</h2>
+                        <p>
+                            Built a multi-tier application using Java, Spring Boot, and React.js. Developed responsive
+                            UI components and integrated them with backend services via REST APIs. Applied
+                            object-oriented design principles for clean and maintainable code. Identified and resolved
+                            bugs through systematic debugging and testing. Secure payment flows via Razorpay and
+                            webhooks for real-time updates. Spring Security + JWT for API protection, and Cloudinary
+                            for efficient media asset management.
+                        </p>
+                    </div>
+                    <div class="project-image">
+                        <img src="assests/images/E-Com_Web_App.jpg" alt="E-Commerce"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+                        <div class="img-placeholder" style="display: none">
+                            <i class="bi bi-shop"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-card-inner">
+                    <div class="project-content">
+                        <span class="project-tag">PyTorch · Deep Learning</span>
+                        <h2>UNET-Based Terrain Classification</h2>
+                        <p>
+                            Terrain classification system using PyTorch with a custom CNN/UNET model to classify rocky,
+                            forest, and desert terrain images. Data preprocessing, labeling, augmentation,
+                            GPU-accelerated training, and deployment checkpoints for real-time inference.
+                        </p>
+                    </div>
+                    <div class="project-image">
+                        <img src="assests/images/terrain.png" alt="Terrain"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+                        <div class="img-placeholder" style="display: none">
+                            <i class="bi bi-cpu-fill"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-card-inner">
+                    <div class="project-content">
+                        <span class="project-tag">PHP · MySQL</span>
+                        <h2>Pizza Order Management System</h2>
+                        <p>
+                            Full-stack management system using HTML, PHP, and MySQL for efficient management of
+                            customers, orders, pizza types, and toppings. Complete CRUD operations for customer
+                            profiles, pizza configurations, and order details through intuitive web forms.
+                        </p>
+                    </div>
+                    <div class="project-image">
+                        <img src="assests/images/pizza.png" alt="Pizza"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+                        <div class="img-placeholder" style="display: none">
+                            <i class="bi bi-egg-fried"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-      </section> -->
     </div>
-  </body>
+</div>
+
+</body>
 </html>
